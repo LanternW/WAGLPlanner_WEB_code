@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="../static/css/css_main.css">
+<script src = "../static/js/vars.js"></script>
+<script src="../static/js/record.js"></script>
+<script src="../static/js/jquery-3.5.1.js"></script>
+<script src = "../static/js/jCanvas.js"></script>
+<script src = "../static/js/painter.js"></script>
+<script src="../static/js/xlsx.full.min.js"></script>
+<script src="../static/js/js_main.js"></script>
+<script>
+	
+</script>
+	
+<style>
+
+</style>
+</head>
+
+<body>
+
+	<div class="nav">
+		<div class="window"></div>
+		<p class="title" id = "tt">WAGLPLANNER&nbsp; CLICK FOR HELP</p>
+	</div>
+	<div class = "base_screen">
+		
+		<div class="info_screen">
+			<p>在线人数：{{online}}</p>
+		</div>
+		
+		<div class="map_screen">
+			<canvas class = "map" id="canvas" width="600px" height="600px"></canvas>
+		</div>
+		
+		<div class="switch_screen">
+			
+			<button class="switch1 btn"  id = "1">
+				<img src="../static/imgs/main.png" alt="" style="margin-right: 20px">主世界</button>
+			<button class="switch2 btn"  id = "2">
+				<img src="../static/imgs/hell.png" alt="" style="margin-right: 20px">&nbsp;&nbsp;下界</button>
+			<button class="switch3 btn"  id = "3">
+				<img src="../static/imgs/end.png" alt="" style="margin-right: 20px">&nbsp;&nbsp;末地</button>
+			<button class="switch_multi1 btn"  id = "4">地标图层</button>
+			<button class="switch_multi2 btn"  id = "5">加载器图层</button>
+			<button class="switch_multi3 btn"  id = "6">生物群系(test)</button>
+			<button class="switch_pro1 btn" id = "7">+</button>
+			<button class="switch_pro2 btn" id = "8">+</button>
+			<button class="switch_pro3 btn" id = "9">+</button>
+			
+		</div>
+		<div class="detail_screen">
+			<ul class="list" id = "detail_list1">	</ul>
+			<ul class="list" id = "detail_list2">	</ul>
+			<ul class="list" id = "detail_list3">	</ul>
+			<ul class="list" id = "detail_list4">	</ul>
+			<ul class="list" id = "detail_list5">	</ul>
+			<ul class="list" id = "detail_list6">	</ul>
+			<ul class="list" id = "detail_list7">	</ul>
+			<ul class="list" id = "detail_list8">	</ul>
+			<ul class="list" id = "detail_list9">	</ul>
+			<div class="operate">
+				<button class="add_button" id = "10">Add</button>
+			</div>
+		</div>
+		<div class="description_screen" id = "description"></div>
+	</div>
+	
+	<div class="add" id = "extra_menu">
+		<div class="pre"><img src="../static/record/photos/none.png" id="pic"></div>
+		<div class="ldmk_add">
+		<input id="input_name" type="text" name="name" , value="名称">
+		<input id="input_x" type="text" name="x_coordinate" , value="X坐标">
+		<input id="input_z" type="text" name="z_coordinate" , value="Z坐标"> 
+		<input id="input_prodct" type="text" name="production" value="产品">
+		<input id="input_description" type="text" name="description" value="介绍">
+		<div class="dor">不包含地狱门</div>
+		<div class="color">地标颜色 &nbsp;  <div id="show"></div>
+			<canvas id="color_select" width="150px" height="90px"></canvas>
+		</div>
+		<input id="input_upload" id="input_photo" type="file" name="upload">
+		<input id="input_submit" type="submit" name="submit">
+		
+		</div>
+		<button class="back" id="back">取消</button>
+	</div>
+</body>
+</html>
