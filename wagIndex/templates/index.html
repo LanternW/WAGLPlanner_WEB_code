@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to WAG!</title>
+<link rel="stylesheet" href="../static/css/wag_main.css">
+<script src="../static/js/jquery-3.5.1.js"></script>
+<script src = "../static/js/jCanvas.js"></script>
+<script src="../static/js/vars.js"></script>
+<script src="../static/js/gui.js"></script>
+<script src="../static/js/js_index.js"></script>
+</head>
+
+	
+	
+<body>
+	
+	<div id="guide">
+		<p id="logo">WAG Server</p>
+		
+		<a href="https://survival.wag.cnstl.tech/planner/" target="_blank">
+			<span id="planner">planner</span>
+		</a>
+		
+	</div>
+	
+	<div id="base_screen">
+		
+		<div id="status_screen">
+			<p>服务器状态监测：</p>
+			<p>&nbsp;  </p>
+			<p>&nbsp;  </p>
+			<p id="status">运行状态：{{server_status}} </p>
+			<p>&nbsp;  </p>
+			<p id="player_count">在线人数：{{player_count}}</p>
+			<p>&nbsp;  </p>
+			<p id="version">当前版本: {{version}}</p>
+			<p>&nbsp;  </p>
+			<p>&nbsp;  </p>
+			<p>CPU占用率：</p>
+			<p>&nbsp;  </p>
+			<canvas id="cpu" width="300px" height="100px"> </canvas>
+			<p>&nbsp;  </p>
+			<p>内存占用率：</p>
+			<p>&nbsp;  </p>
+			<canvas id="memory" width="300px" height="100px"> </canvas>
+		</div>
+		
+		<div id="main_screen">
+		
+			内容未定
+			
+		</div>
+		
+		<div id="chat">
+			<p id="chat_title">发送消息至玩家：</p>
+			<input type="text" class="text_input">
+			<button id="chat_submit">发送</button>
+		</div>
+		
+		
+		
+	</div>
+	
+	
+	
+	
+
+</body>
+</html>
