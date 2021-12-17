@@ -133,17 +133,17 @@ function appendHellLdmk(id,name,posx,posz,r,g,b,dor,photo,production,description
 
 function appendEndLdmk(id,name,posx,posz,r,g,b,dor,photo,production,description)
 {
-	end_ldmks_ids[hell_ldmks_max_index] = id;
-	end_ldmks_names[hell_ldmks_max_index] = name;
-	end_ldmks_posx[hell_ldmks_max_index] = posx;
-	end_ldmks_posz[hell_ldmks_max_index] = posz;
-	end_ldmks_r[hell_ldmks_max_index] = r;
-	end_ldmks_g[hell_ldmks_max_index] = g;
-	end_ldmks_b[hell_ldmks_max_index] = b;
-	end_ldmks_dor[hell_ldmks_max_index] = dor;
-	end_ldmks_photo[hell_ldmks_max_index] = photo;
-	end_ldmks_production[hell_ldmks_max_index] = production;
-	end_ldmks_description[hell_ldmks_max_index] = description;
+	end_ldmks_ids[end_ldmks_max_index] = id;
+	end_ldmks_names[end_ldmks_max_index] = name;
+	end_ldmks_posx[end_ldmks_max_index] = posx;
+	end_ldmks_posz[end_ldmks_max_index] = posz;
+	end_ldmks_r[end_ldmks_max_index] = r;
+	end_ldmks_g[end_ldmks_max_index] = g;
+	end_ldmks_b[end_ldmks_max_index] = b;
+	end_ldmks_dor[end_ldmks_max_index] = dor;
+	end_ldmks_photo[end_ldmks_max_index] = photo;
+	end_ldmks_production[end_ldmks_max_index] = production;
+	end_ldmks_description[end_ldmks_max_index] = description;
 	end_ldmks_max_index += 1;
 }
 
@@ -270,7 +270,7 @@ function setEndLdmksLi()
 		
 		slot.innerHTML += nodeToString(block);
 		slot.innerHTML += nodeToString(txt);
-		$("#detail_list4").append(slot);
+		$("#detail_list7").append(slot);
 	}
 	
 	//注册列表按钮监听
