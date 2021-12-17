@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  memberd:
+    container_name: wag_planner
+    build: .
+    restart: always
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - "./waglplanner/record:/root/wagp/waglplanner/record"

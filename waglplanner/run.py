@@ -142,7 +142,7 @@ def loadLDMK(sheet): #读取地标的进一步封装函数
 
 def loadingLdmks(selected):
     #读取地标文档
-    landmark_book = xlrd.open_workbook("record\\landmarks.xls")
+    landmark_book = xlrd.open_workbook(os.path.join("record","landmarks.xls"))
     if selected == 1:
         sheet_main = landmark_book.sheet_by_name('main')
         return loadLDMK(sheet_main)
@@ -307,5 +307,5 @@ def downloadFile():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0' ,port=80)
+    app.run(host='0.0.0.0' ,port=8080)
 

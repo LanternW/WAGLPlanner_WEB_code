@@ -3,7 +3,7 @@ The web code of WAGLPlanner application
 
 
 
-Run satrt.bat, then visit 127.0.0.1 in browser.
+cd into subdir and run `python run.sh`, then visit 127.0.0.1:8080 in browser.
 Data in record/landmarks.xls
 Developed with Flask
 
