@@ -43,7 +43,7 @@ function loadData()
 {
 	$.ajax({
 		type:"post",
-		url:"/platform/data",
+		url:"platform/data",
 		data:{"todo":"GETDATAS"},
 		
 		success:function(list){

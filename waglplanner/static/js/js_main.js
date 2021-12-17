@@ -40,7 +40,7 @@ function submitAdd()
 	
 	$.ajax({
 		type:"post",
-		url:"/ldmkadd",
+		url:"ldmkadd",
 		data:{
 			
 			"world":selected_world,
