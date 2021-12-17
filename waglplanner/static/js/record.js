@@ -289,7 +289,7 @@ function loadMainLdmks()
 {
 	$.ajax({
 		type:"post",
-		url:"/",
+		url:"",
 		data:{"get":"MLDMK"},
 		success:function(list){
 
@@ -337,7 +337,7 @@ function loadHellLdmks()
 {
 	$.ajax({
 		type:"post",
-		url:"/",
+		url:"",
 		data:{"get":"HLDMK"},
 		success:function(list){
 
@@ -385,7 +385,7 @@ function loadEndLdmks()
 {
 	$.ajax({
 		type:"post",
-		url:"/",
+		url:"",
 		data:{"get":"ELDMK"},
 		success:function(list){
 
