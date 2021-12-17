@@ -1,6 +1,6 @@
 version: "3.1"
 services:
-  memberd:
+  wagplanner:
     container_name: wag_planner
     build: .
     restart: always
